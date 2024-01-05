@@ -1,0 +1,451 @@
+// Color variables
+$indigo: #180D58; 
+$bright-pink: #CD139A; 
+$purple: #4537BC; 
+$light-purple: #DBBFDD; 
+$dark-purple: #10073E; 
+
+// Base styles
+body, html {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: $purple;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: calc(15px + 0.390625vw);
+
+}
+
+h1 {
+  font-size: calc(50px + 0.390625vw);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: calc(34px + 0.390625vw);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: calc(9.5px + 0.2vw);
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+p {
+  font-size: calc(15px + 0.390625vw);
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+#bg {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+// Navbar
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: rgba($indigo , 0.75);
+  color: white;
+  padding: 20px 100px;
+  z-index: 1000; 
+  box-shadow: inset 0px 0px 10px rgba($dark-purple, 0.5);
+}
+
+.nav-content {
+  display: flex;
+  max-width: 100vw;
+  color: $light-purple;
+  // justify-content: space-evenly;
+  align-items: center;
+  font-size: calc(12px + 0.390625vw);
+}
+
+.nav-content a {
+  text-decoration: none; 
+  text-align: center;
+  color: $light-purple;
+}
+
+a:hover {
+  color: $bright-pink;
+}
+
+
+// Home card
+.home-card {
+  h1 {
+    color: $light-purple;
+  }
+  h2 {
+    color: $bright-pink;
+  }
+  p {
+    color: $purple;
+  }
+  background: rgba($indigo , 0.75);
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+  padding: 75px;
+  margin: auto; 
+  margin-top: 10%;
+  // margin-bottom: 20%; 
+  color: transparent;
+  box-shadow: inset 0px 0px 10px rgba($dark-purple, 1);
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: left;
+  z-index: 100;
+
+  .image-column {
+    padding-right: 55px;
+
+    img {
+      border-radius: 0px; // If you want a rounded image
+      width: 100%; // Responsive image width
+      object-fit: contain; // Keep aspect ratio of the image
+    }
+  }
+
+  .text-column {
+  }
+}
+
+
+.projects-section {
+
+  h1 {
+    margin-left: 20%;
+    padding-top: 50px;
+    color: $light-purple;
+  }
+  h2 {
+    margin-left: 20%;
+    padding-bottom: 50px;
+    color: $dark-purple;
+  }
+  h3 {
+    color: $light-purple;
+  }
+
+  background: rgba($bright-pink , 0.75);
+  width: 100%;
+  height: min-content;
+  margin-top: 20%;
+  padding-bottom: 50px;
+  flex-direction: row;
+  height: max-content;
+
+  .projects-frame {
+
+    width: max-content;
+    margin: auto;
+    height: min-content;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+
+    .project-card {
+      background: rgba($indigo , 0.75);
+      border-radius: 20px;
+      margin: 10px;
+      width: 325px;
+      text-overflow: ellipsis;
+      height: 50%;
+      padding: 20px;
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      box-shadow: inset 0px 0px 10px rgba($dark-purple, 0.5);
+
+      .image-row {
+        padding: 5px;
+        img {
+          border-radius: 10px;
+          width: 100%;
+          height: auto; 
+          object-fit: cover; 
+        }
+      }
+    }
+
+  }
+}
+
+// Education Section
+.education-card {
+  h1 {
+    color: $light-purple;
+  }
+  h2 {
+    color: $bright-pink;
+  }
+  p {
+    color: $purple;
+  }
+  background: rgba($indigo , 0.75);
+  width: max-content;
+  height: min-content;
+  border-radius: 50px;
+  padding: 75px;
+  margin: auto; 
+  margin-top: 75px; 
+  margin-bottom: 75px; 
+  color: transparent;
+  box-shadow: inset 0px 0px 10px rgba($dark-purple, 1);
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+  z-index: 100;
+
+  .image-column {
+    padding-right: 55px;
+
+    img {
+      width: 7.5em; 
+      object-fit: contain; 
+    }
+  }
+
+  .text-column {
+  }
+}
+
+.skills-section {
+
+  h1 {
+    margin-left: 20%;
+    padding-top: 50px;
+    color: $light-purple;
+  }
+  h2 {
+    margin-left: 20%;
+    padding-bottom: 50px;
+    color: $dark-purple;
+  }
+  h3 {
+    color: $light-purple;
+  }
+
+  background: rgba($bright-pink , 0.75);
+  width: 100%;
+  height: min-content;
+  padding-bottom: 50px;
+  flex-direction: row;
+  height: max-content;
+
+  .skills-frame {
+
+    width: max-content;
+    margin: auto;
+    height: min-content;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+
+
+    .skill-card {
+      background: rgba($indigo , 0.75);
+      border-radius: 20px;
+      width: 22%;
+      height: 50%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: left;
+      box-shadow: inset 0px 0px 10px rgba($dark-purple, 0.5);
+      
+    }
+
+  }
+}
+
+.achievements-section {
+
+  h1 {
+    margin-left: 20%;
+    padding-top: 20px;
+    color: $light-purple;
+  }
+  h2 {
+    margin-left: 20%;
+    padding-bottom: 50px;
+    color: $bright-pink;
+  }
+  h3 {
+    color: $light-purple;
+  }
+  h4 {
+    color: $bright-pink;
+  }
+
+
+  background: transparent;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  height: min-content;
+  
+  .achievements-frame {
+
+    width: max-content;
+    margin: auto;
+    height: min-content;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+
+    .achievement-card {
+      background: rgba($indigo , 0.75);
+      border-radius: 20px;
+      margin: 10px;
+      width: 420px;
+      height: auto;
+      padding: 20px;
+      box-shadow: inset 0px 0px 10px rgba($dark-purple, 1);
+      align-items: center;
+      text-align: left;
+    }
+
+  }
+}
+
+.experience-section {
+
+  h1 {
+    margin-left: 20%;
+    padding-top: 20px;
+    color: $light-purple;
+  }
+  h2 {
+    margin-left: 20%;
+    padding-bottom: 20px;
+    color: $dark-purple;
+    padding-bottom: 20px;
+  }
+  h3 {
+    color: $light-purple;
+  }
+
+  h4 {
+    color: $bright-pink;
+  }
+
+  background: rgba($bright-pink , 0.75);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  flex-direction: row;
+
+  .experience-frame {
+    height: auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+
+    .experience-card {
+      background: rgba($indigo , 0.75);
+      box-shadow: inset 0px 0px 10px rgba($dark-purple, 0.5);
+      border-radius: 20px;
+      width: 25em;
+      height: fit-content;
+      padding: 20px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: left;
+    }
+
+    .experience-card:nth-child(odd) {
+      border-left: 3px solid $light-purple;
+      padding-left: 3em;
+      transform: translateX(16.5em);
+    }
+
+    .experience-card:nth-child(even) {
+      border-right: 3px solid $light-purple;
+      padding-right: 3em;
+      transform: translateX(-16.5em);
+    }
+
+    .experience-card:nth-child(odd)::before, .experience-card:nth-child(even)::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 3em;
+      height: 3px;
+      background: $light-purple;
+      transform: translateY(-50%);
+    }
+
+    .experience-card:nth-child(odd)::before {
+      left: -3em;
+    }
+
+    .experience-card:nth-child(even)::before {
+      right: -3em;
+    }
+
+    .experience-card:nth-child(odd)::after, .experience-card:nth-child(even)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: $light-purple;
+      transform: translateY(-50%);
+    }
+
+    .experience-card:nth-child(odd)::after {
+      left: -3em;
+    }
+
+    .experience-card:nth-child(even)::after {
+      right: -3em;
+    }
+
+
+  }
+}
+
