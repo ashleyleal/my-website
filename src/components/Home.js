@@ -12,8 +12,7 @@ function Home() {
       <h2>WELCOME! MY NAME IS</h2>
       <h1>ASHLEY LEAL</h1>
       <p>
-        I'm an engineering student based in Toronto, Ontario, and am
-        currently seeking opportunities for summer 2024 SWE internships.
+        I'm an engineering student from Toronto, Ontario.
       </p>
     </div>
   </div>

@@ -153,16 +153,17 @@ a:hover {
     font-size: calc(14px + 0.75vw);
   }
   background: rgba($indigo , 0.75);
-  width: 50%;
-  height: 30vh;
+  min-width: min-content;
+  max-width: 60vw;
+  height: max-content;
   border-radius: 75px;
   padding: 75px;
   margin: auto; 
-  margin-top: 15%; 
+  margin-top: 10%; 
   color: transparent;
   box-shadow: inset 0px 0px 10px rgba($dark-purple, 1);
-  display: flex;
-  flex-direction: row; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center; 
   justify-content: center; 
   text-align: left;
@@ -171,18 +172,26 @@ a:hover {
   border: 1px solid rgba($light-purple, 0.05);
 
   .image-column {
-    padding-right: 55px;
-
+    padding-right: 2vw;
+    min-width: min-content;
     img {
-      width: 100%; // Responsive image width
-      object-fit: contain; // Keep aspect ratio of the image
+      width: 100%;
+      object-fit: contain; 
+      
     }
   }
 
   .text-column {
   }
+
+
 }
 
+@media screen and (max-width: 600px) {
+  .home-card {
+    grid-template-columns: 1fr; 
+  }
+}
 
 .projects-section {
   h1 {
