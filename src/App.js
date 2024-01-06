@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.js";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import Tilt from "react-parallax-tilt";
 
 const App = () => {
   const [init, setInit] = useState(false);
@@ -69,7 +70,7 @@ const App = () => {
           density: {
             enable: true,
           },
-        value: 600,
+          value: 600,
         },
         opacity: {
           animation: {
@@ -96,40 +97,39 @@ const App = () => {
         <Navbar />
         <main className="app">
           <title>Ashley Leal</title>
-
+          <Tilt>
           <div className="home-card">
             <div className="image-column">
-              <img
-                src="/assets/me.png"
-                alt="Ashley Leal"
-                layout="responsive"
-              />
+              <img src="/assets/me.png" alt="Ashley Leal" layout="responsive" />
             </div>
             <div className="text-column">
               <h2>WELCOME! MY NAME IS</h2>
               <h1>ASHLEY LEAL</h1>
               <p>
-                I'm an engineering student based in Toronto, Ontario, and am 
+                I'm an engineering student based in Toronto, Ontario, and am
                 currently seeking opportunities for summer 2024 SWE internships.
               </p>
             </div>
           </div>
+          </Tilt>
 
           <div className="projects-section">
             <h1>PROJECTS</h1>
             <h2>WHAT I'VE CREATED SO FAR...</h2>
             <div className="projects-frame">
-              <div className="project-card">
-                <h3>MUSIC GENRE CLASSIFIER</h3>
-                <p>PyTorch</p>
-                <div className="image-row">
-                  <img
-                    src="/assets/MusicClassificationModel.png"
-                    alt="Ashley Leal"
-                    layout="responsive"
-                  />
+
+                <div className="project-card">
+                  <h3>MUSIC GENRE CLASSIFIER</h3>
+                  <p>PyTorch</p>
+                  <div className="image-row">
+                    <img
+                      src="/assets/MusicClassificationModel.png"
+                      alt="Ashley Leal"
+                      layout="responsive"
+                    />
+                  </div>
                 </div>
-              </div>
+              
               <div className="project-card">
                 <h3>PORTFOLIO WEBSITE</h3>
                 <p>React</p>
@@ -190,9 +190,10 @@ const App = () => {
                   />
                 </div>
               </div>
-              </div>
+            </div>
           </div>
 
+          <Tilt>
           <div className="education-card">
             <div className="image-column">
               <img
@@ -215,6 +216,7 @@ const App = () => {
               </p>
             </div>
           </div>
+          </Tilt>
 
           <div className="skills-section">
             <h1>SKILLS</h1>
@@ -232,57 +234,81 @@ const App = () => {
                 <h3>TOOLS</h3>
                 <p>Git, GitHub, VSCode, Jupyter Notebook, Google Colab</p>
               </div>
-              </div>
+            </div>
           </div>
 
           <div className="achievements-section">
             <h1>ACHIEVEMENTS</h1>
             <h2>WHAT I’VE ACCOMPLISHED SO FAR...</h2>
             <div className="achievements-frame">
-            <div className="achievement-card">
-                <h3>PROGRAMMING COMPETITION
+              <Tilt>
+              <div className="achievement-card">
+                <h3>
+                  PROGRAMMING COMPETITION
                   <br></br>
-                  2ND PLACE WINNER</h3>
+                  2ND PLACE WINNER
+                </h3>
                 <h4>UOFT ENGINEERING KOMPETITIONS</h4>
                 <p>Nov 2023</p>
               </div>
+              </Tilt>
+              <Tilt>
               <div className="achievement-card">
-                <h3>JUNIOR DESIGN COMPETITION
+                <h3>
+                  JUNIOR DESIGN COMPETITION
                   <br></br>
-                  3RD PLACE WINNER</h3>
+                  3RD PLACE WINNER
+                </h3>
                 <h4>UOFT ENGINEERING KOMPETITIONS</h4>
                 <p>Jan 2023</p>
               </div>
+              </Tilt>
+              <Tilt>
               <div className="achievement-card">
-                <h3>DEAN'S MERIT AWARD
+                <h3>
+                  DEAN'S MERIT AWARD
                   <br></br>
-                  ADMISSION SCHOLARSHIP</h3>
+                  ADMISSION SCHOLARSHIP
+                </h3>
                 <h4>UOFT FACULTY OF APPLIED SCIENCE AND ENGINEERING</h4>
                 <p>Mar 2022</p>
               </div>
+              </Tilt>
             </div>
             <div className="achievements-frame">
-            <div className="achievement-card">
-                <h3>EDWARD S ROGERS SR.
+            <Tilt>
+              <div className="achievement-card">
+                <h3>
+                  EDWARD S ROGERS SR.
                   <br></br>
-                  ADMISSION SCHOLARSHIP</h3>
+                  ADMISSION SCHOLARSHIP
+                </h3>
                 <h4>EDWARD S. ROGERS SR. DEPARTMENT OF ECE</h4>
                 <p>Mar 2022</p>
               </div>
+              </Tilt>
+              <Tilt>
               <div className="achievement-card">
-                <h3>PRINCIPAL’S LIST
+                <h3>
+                  PRINCIPAL’S LIST
                   <br></br>
-                  GRADUATION AWARD</h3>
+                  GRADUATION AWARD
+                </h3>
                 <h4>ST. MAXIMILIAN KOLBE CHS</h4>
                 <p>Jun 2022</p>
               </div>
+              </Tilt>
+              <Tilt>
               <div className="achievement-card">
-                <h3>HONOUR ROLL 
+                <h3>
+                  HONOUR ROLL
                   <br></br>
-                  GRADUATION AWARD</h3>
+                  GRADUATION AWARD
+                </h3>
                 <h4>ST. MAXIMILIAN KOLBE CHS</h4>
                 <p>Jun 2022</p>
               </div>
+              </Tilt>
             </div>
           </div>
 
@@ -290,6 +316,7 @@ const App = () => {
             <h1>EXPERIENCE</h1>
             <h2>WHERE I'VE MADE AN IMPACT SO FAR...</h2>
             <div className="experience-frame">
+            <vr class="vertical-line"></vr>
               <div className="experience-card">
                 <h3>TECHINCAL ASSOCIATE</h3>
                 <h4>IEEE UNIVERSITY OF TORONTO STUDENT BRANCH</h4>
