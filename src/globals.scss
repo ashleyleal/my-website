@@ -562,3 +562,22 @@ a:hover {
   backdrop-filter: blur(5px);
   border: 1px solid rgba($light-purple, 0.05);
 }
+
+button {
+  background-color: rgba($purple , 0.75);
+  color: $dark-purple;
+  width: max-content;
+  margin-top: 15px;
+  border: 1px solid rgba($light-purple, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: calc(14px + 0.390625vw);
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba($bright-pink , 0.5);
+    color: $light-purple;
+  }
+}

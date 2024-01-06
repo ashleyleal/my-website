@@ -1,6 +1,7 @@
 // Home.js
 import React from "react";
 import "../globals.scss";
+import PDFButton from "./PDFButton.js";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <p>
         I'm an engineering student from Toronto, Ontario.
       </p>
+      <PDFButton prompt="MY RESUME" pdf="/assets/Resume.pdf"/>
     </div>
   </div>
   );
