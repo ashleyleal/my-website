@@ -1,7 +1,6 @@
 // Navbar.js
 import React from "react";
-import "../App.scss";
-// import {Link} from 'react-scroll';
+import "../globals.scss";
 
 function Navbar() {
   return (

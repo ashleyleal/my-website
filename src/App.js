@@ -1,5 +1,6 @@
-import "./App.scss";
+import "./globals.scss";
 import Navbar from "./components/Navbar.js";
+import Home from "./components/Home.js";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
@@ -83,7 +84,7 @@ const App = () => {
           type: "circle",
         },
         size: {
-          value: 1.5, // size of stars
+          value: 1.75, // size of stars
         },
       },
       detectRetina: true,
@@ -98,25 +99,13 @@ const App = () => {
         <main className="app">
           <title>Ashley Leal</title>
           <Tilt>
-          <div className="home-card">
-            <div className="image-column">
-              <img src="/assets/me.png" alt="Ashley Leal" layout="responsive" />
-            </div>
-            <div className="text-column">
-              <h2>WELCOME! MY NAME IS</h2>
-              <h1>ASHLEY LEAL</h1>
-              <p>
-                I'm an engineering student based in Toronto, Ontario, and am
-                currently seeking opportunities for summer 2024 SWE internships.
-              </p>
-            </div>
-          </div>
+          <Home />
           </Tilt>
 
           <div className="projects-section">
             <h1>PROJECTS</h1>
-            <h2>WHAT I'VE CREATED SO FAR...</h2>
-            <div className="projects-frame">
+            <h2>WHAT I'VE MADE SO FAR...</h2>
+            <div className="projects-grid">
 
                 <div className="project-card">
                   <h3>MUSIC GENRE CLASSIFIER</h3>
@@ -153,9 +142,7 @@ const App = () => {
                   />
                 </div>
               </div>
-            </div>
 
-            <div className="projects-frame">
               <div className="project-card">
                 <h3>GARBAGE</h3>
                 <p>Arduino</p>
@@ -172,7 +159,7 @@ const App = () => {
                 <p>React Native</p>
                 <div className="image-row">
                   <img
-                    src="/assets/PlaceHolderProject.png"
+                    src="/assets/Journa.png"
                     alt="Ashley Leal"
                     layout="responsive"
                   />
@@ -316,7 +303,6 @@ const App = () => {
             <h1>EXPERIENCE</h1>
             <h2>WHERE I'VE MADE AN IMPACT SO FAR...</h2>
             <div className="experience-frame">
-            <vr class="vertical-line"></vr>
               <div className="experience-card">
                 <h3>TECHINCAL ASSOCIATE</h3>
                 <h4>IEEE UNIVERSITY OF TORONTO STUDENT BRANCH</h4>
@@ -335,7 +321,7 @@ const App = () => {
               <div className="experience-card">
                 <h3>GAME DEVELOPER</h3>
                 <h4>ROBLOX DEVELOPER EXCHANGE PROGRAM</h4>
-                <p>May 2021 - Present</p>
+                <p>Dec 2015 - Present</p>
               </div>
             </div>
           </div>
@@ -347,6 +333,7 @@ const App = () => {
           particlesLoaded={particlesLoaded}
           options={options}
         />
+        <div className="footer"></div>
       </>
     );
   }
