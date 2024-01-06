@@ -76,6 +76,7 @@ p {
   box-shadow: inset 0px 0px 10px rgba($dark-purple, 0.5);
   backdrop-filter: blur(5px);
   border: 1px solid rgba($light-purple, 0.05);
+
 }
 
 .nav-content {
@@ -86,7 +87,7 @@ p {
   align-items: center;
   white-space: nowrap;
   h3 {
-    color: $light-purple;
+    color: $bright-pink;
     font-size: calc(12px + 0.390625vw);
   }
 }
@@ -198,27 +199,36 @@ a:hover {
     color: $light-purple;
   }
 
+  h4 {
+    color: $bright-pink;}
+
+  p {
+    padding-bottom: 5px;
+  }
+
   background: rgba($bright-pink, 0.75);
   width: 100%;
   height: max-content; // Choose between max-content or min-content
   margin-top: 20%;
   padding-bottom: 50px;
   flex-direction: row;
+  
 
   .projects-grid {
-    max-width: 50%;
+    max-width: 60vw;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(325px + 3vw), 1fr));
-    gap: 1vw;
+    grid-template-columns: repeat(auto-fill, minmax(calc(200px + 8vw), 1fr));
+    justify-items: center;
+    gap: calc(15px + 1vw);
 
     .project-card {
       background: rgba($indigo, 0.75);
       border-radius: 20px;
       margin: 10px;
-      width: calc(300px + 3vw);
-      height: min-content; 
-      padding: 20px;
+      width: calc(200px + 8vw);
+      height: max-content; 
+      padding: 15px;
       flex-direction: column;
       align-items: center;
       text-align: left;
@@ -227,19 +237,46 @@ a:hover {
       border: 1px solid rgba($light-purple, 0.1);
 
       .image-row {
-        padding: 5px;
+        position: relative;
+
         img {
           border-radius: 10px;
           width: 100%;
           height: auto;
           object-fit: cover;
         }
+
+        .hover-image {
+          display: none;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .default-image {
+          display: block;
+          z-index: 1;
+        }
+      }
+
+      &:hover {
+        border: 1px solid $light-purple;
+
+        .hover-image {
+          display: block;
+        }
+
+        // .default-image {
+        //   display: none;
+        // }
       }
     }
   }
 }
 
 // Education Section
+
 .education-card {
   h1 {
     color: $light-purple;
@@ -364,20 +401,19 @@ a:hover {
   height: min-content;
   
   .achievements-frame {
-
-    width: max-content;
+    max-width: 60vw;
     margin: auto;
-    height: min-content;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(200px + 10vw), 1fr));
+    justify-items: center;
+    column-gap: calc(15px + 1.5vw);
+
 
     .achievement-card {
       background: rgba($indigo , 0.75);
       border-radius: 20px;
       margin: 10px;
-      width: 420px;
+      width: calc(200px + 10vw);
       height: auto;
       padding: 20px;
       box-shadow: inset 0px 0px 10px rgba($dark-purple, 1);

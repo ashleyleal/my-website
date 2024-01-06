@@ -20,7 +20,7 @@ function Navbar() {
         </div>
 
         <div className="nav-icons">
-          <a href="https://github.com/ashleyleal">
+          <a href="https://github.com/ashleyleal" target="_blank">
             <div class="image-container">
               <img
                 src="/assets/Github.png"
@@ -35,7 +35,7 @@ function Navbar() {
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/in/ashleynicoleleal/">
+          <a href="https://www.linkedin.com/in/ashleynicoleleal/" target="_blank">
             <div class="image-container">
               <img
                 src="/assets/LinkedIn.png"
@@ -50,7 +50,7 @@ function Navbar() {
             </div>
           </a>
 
-          <a href="mailto:ashley.leal@mail.utoronto.ca?">
+          <a href="mailto:ashley.leal@mail.utoronto.ca?" target="_blank">
             <div class="image-container">
               <img
                 src="/assets/Email.png"
