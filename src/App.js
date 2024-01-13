@@ -98,9 +98,8 @@ const App = () => {
         <Navbar />
         <main className="app">
           <title>Ashley Leal</title>
-          <Tilt>
             <Home />
-          </Tilt>
+
 
           <div className="projects-section">
             <h1>PROJECTS</h1>
@@ -118,6 +117,30 @@ const App = () => {
                     alt="Ashley Leal"
                     layout="responsive"
                   />
+                </div>
+              </div>
+
+              <div className="project-card">
+                <h3>WHACK</h3>
+                <h4>VERILOG&nbsp;&nbsp;&nbsp;&nbsp;FPGA&nbsp;&nbsp;&nbsp;&nbsp;MODELSIM</h4>
+                <p>Dec 2023</p>
+                <div className="image-row">
+                <a href="https://github.com/ashleyleal/Whack" target="_blank">
+                <div class="project-container">
+                  <img
+                    src="/assets/Whack.jpg"
+                    alt="SymptoDoc"
+                    layout="responsive"
+                    class="default-image"
+                  />
+                  <img
+                    src="/assets/Whack.jpg"
+                    alt="SymptoDoc Hover"
+                    layout="responsive"
+                    class="hover-image"
+                  />
+                </div>
+                </a>
                 </div>
               </div>
               
@@ -139,6 +162,30 @@ const App = () => {
                   <img
                     src="/assets/MusicClassificationModel.gif"
                     alt="Music Classifier Hover"
+                    layout="responsive"
+                    class="hover-image"
+                  />
+                </div>
+                </a>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <h3>SYMPTODOC</h3>
+                <h4>PYTHON&nbsp;&nbsp;&nbsp;&nbsp;FLASK&nbsp;&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS</h4>
+                <p>May 2023</p>
+                <div className="image-row">
+                <a href="https://github.com/ashleyleal/symptoDoc-MetHacks-2023" target="_blank">
+                <div class="project-container">
+                  <img
+                    src="/assets/SymptoDoc.jpg"
+                    alt="SymptoDoc"
+                    layout="responsive"
+                    class="default-image"
+                  />
+                  <img
+                    src="/assets/SymptoDoc.jpg"
+                    alt="SymptoDoc Hover"
                     layout="responsive"
                     class="hover-image"
                   />
@@ -170,6 +217,7 @@ const App = () => {
                 </a>
                 </div>
               </div>
+              
 
               <div className="project-card">
                 <h3>JOURNA</h3>
@@ -182,7 +230,7 @@ const App = () => {
                 <a href="https://github.com/ashleyleal/journa-UofTHacks-2023" target="_blank">
                 <div class="project-container">
                   <img
-                    src="/assets/Journa.png"
+                    src="/assets/JournaThumbnail.png"
                     alt="Journa"
                     layout="responsive"
                     class="default-image"
@@ -190,6 +238,32 @@ const App = () => {
                   <img
                     src="/assets/Journa.png"
                     alt="Journa Hover"
+                    layout="responsive"
+                    class="hover-image"
+                  />
+                </div>
+                </a>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <h3>PRODUCTIVE PET</h3>
+                <h4>
+                  JAVASCRIPT&nbsp;&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS
+                </h4>
+                <p>Nov 2022</p>
+                <div className="image-row">
+                <a href="https://github.com/ashleyleal/ProductivePet-NewHacks-2022" target="_blank">
+                <div class="project-container">
+                  <img
+                    src="/assets/ProductivePet.png"
+                    alt="Productive Pet"
+                    layout="responsive"
+                    class="default-image"
+                  />
+                  <img
+                    src="/assets/ProductivePet.png"
+                    alt="Productive Pet"
                     layout="responsive"
                     class="hover-image"
                   />
@@ -223,7 +297,7 @@ const App = () => {
                 </a>
                 </div>
               </div>
-
+{/* 
               <div className="project-card">
                 <h3>DOUBLE TROUBLE</h3>
                 <h4>LUA&nbsp;&nbsp;&nbsp;&nbsp;JSON&nbsp;&nbsp;&nbsp;&nbsp;BLENDER</h4>
@@ -238,7 +312,7 @@ const App = () => {
                     class="default-image"
                   />
                   <img
-                    src="/assets/DoubleTroubleHover.png"
+                    src="/assets/DoubleTrouble.png"
                     alt="Double Trouble Hover"
                     layout="responsive"
                     class="hover-image"
@@ -246,7 +320,7 @@ const App = () => {
                 </div>
                 </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

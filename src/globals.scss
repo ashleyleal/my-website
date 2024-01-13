@@ -92,7 +92,7 @@ p {
   }
 }
 
-.nav-content .nav-links{
+.nav-content .nav-links {
   display: flex;
   width: 45em;
   color: $light-purple;
@@ -100,7 +100,12 @@ p {
   align-items: center;
   margin: auto;
   font-size: calc(10px + 0.390625vw);
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
+
 
 .nav-content .nav-icons{
   display: flex;
@@ -224,7 +229,7 @@ a:hover {
   
 
   .projects-grid {
-    max-width: 60vw;
+    max-width: 70vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(200px + 8vw), 1fr));
@@ -430,7 +435,7 @@ a:hover {
       text-align: left;
       backdrop-filter: blur(1px);
       border: 1px solid rgba($light-purple, 0.05);
-      
+    
     }
 
   }
@@ -507,24 +512,6 @@ a:hover {
       // border-right: 3px solid $light-purple;
       // padding-right: 3em;
       transform: translateX(-10vw);
-    }
-
-    .experience-card:nth-child(odd)::before, .experience-card:nth-child(even)::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 3em;
-      height: 3px;
-      background: $light-purple;
-      transform: translateY(-50%);
-    }
-
-    .experience-card:nth-child(odd)::before {
-      left: -3em;
-    }
-
-    .experience-card:nth-child(even)::before {
-      right: -3em;
     }
 
     .experience-card:nth-child(odd)::after, .experience-card:nth-child(even)::after {
