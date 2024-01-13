@@ -6,6 +6,7 @@ import PDFButton from "./PDFButton.js";
 function Home() {
   return (
     <div className="home-card">
+     
     <div className="image-column">
       <img src="/assets/me.png" alt="Ashley Leal" layout="responsive" />
     </div>
@@ -13,11 +14,13 @@ function Home() {
       <h2>WELCOME! MY NAME IS</h2>
       <h1>ASHLEY LEAL</h1>
       <p>
-        I'm an engineering student from Toronto, Ontario.
+        I'm an engineering student from Toronto, Ontario. <br/>
+        Note: This site is still under construction!
       </p>
-      <PDFButton prompt="MY RESUME" pdf="/assets/Resume.pdf"/>
+      {/* <PDFButton prompt="MY RESUME" pdf="/assets/Resume.pdf"/> */} 
     </div>
   </div>
+  
   );
 }
 

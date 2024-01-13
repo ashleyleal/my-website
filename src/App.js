@@ -6,6 +6,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import Tilt from "react-parallax-tilt";
 
+
+
 const App = () => {
   const [init, setInit] = useState(false);
 
@@ -96,12 +98,14 @@ const App = () => {
     return (
       <>
         <Navbar />
+        <section id="home">HOME </section>
         <main className="app">
           <title>Ashley Leal</title>
             <Home />
 
 
           <div className="projects-section">
+          <section id="projects">Projects</section>
             <h1>PROJECTS</h1>
             <h2>WHAT I'VE MADE SO FAR...</h2>
             <div className="projects-grid">
@@ -112,11 +116,22 @@ const App = () => {
                 </h4>
                 <p>Jan 2024</p>
                 <div className="image-row">
+                <a href="https://github.com/ashleyleal/my-website" target="_blank">
+                <div class="project-container">
                   <img
-                    src="/assets/PlaceHolderProject.png"
-                    alt="Ashley Leal"
+                    src="/assets/PersonalWebsite.png"
+                    alt="Portfolio Website"
                     layout="responsive"
+                    class="default-image"
                   />
+                  <img
+                    src="/assets/PersonalWebsite.png"
+                    alt="Portfolio Website Hover"
+                    layout="responsive"
+                    class="hover-image"
+                  />
+                </div>
+                </a>
                 </div>
               </div>
 
@@ -325,7 +340,9 @@ const App = () => {
           </div>
 
           <Tilt>
+          <section id="education">Education</section>
             <div className="education-card">
+              
               <div className="image-column">
                 <img
                   src="/assets/UofT.png"
@@ -334,6 +351,7 @@ const App = () => {
                 />
               </div>
               <div className="text-column">
+              
                 <h1>EDUCATION</h1>
                 <h2>
                   UNIVERSITY OF TORONTO
@@ -351,6 +369,7 @@ const App = () => {
           </Tilt>
 
           <div className="skills-section">
+          <section id="skills">Skills
             <h1>SKILLS</h1>
             <h2>WHAT I’VE LEARNED SO FAR...</h2>
             <div className="skills-frame">
@@ -367,8 +386,10 @@ const App = () => {
                 <p>Git, GitHub, VSCode, Jupyter Notebook, Google Colab</p>
               </div>
             </div>
+            </section>
           </div>
 
+          <section id="achievements">Achievements</section>
           <div className="achievements-section">
             <h1>ACHIEVEMENTS</h1>
             <h2>WHAT I’VE ACCOMPLISHED SO FAR...</h2>
@@ -443,6 +464,7 @@ const App = () => {
           </div>
 
           <div className="experience-section">
+          <section id="experience">Experience</section>
             <h1>EXPERIENCE</h1>
             <h2>WHERE I'VE MADE AN IMPACT SO FAR...</h2>
             <div className="experience-frame">

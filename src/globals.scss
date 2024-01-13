@@ -4,7 +4,6 @@ $bright-pink: #CD139A;
 $purple: #4537BC; 
 $light-purple: #DBBFDD; 
 $dark-purple: #10073E; 
-
 // Base styles
 body, html {
   margin: 0;
@@ -14,6 +13,7 @@ body, html {
   max-width: 100vw;
   overflow-x: hidden;
   font-size: calc(16px + 0.390625vw);
+  scroll-behavior: smooth;
 
 }
 
@@ -23,6 +23,13 @@ h1 {
   font-weight: 900;
   margin: 0;
   padding: 0;
+}
+
+section {
+  font-size: calc(0px);
+  margin: 0;
+  padding: 0;
+  padding-top: 2vw;
 }
 
 h2 {
@@ -122,8 +129,10 @@ p {
   color: $light-purple;
 }
 
-a:hover {
+a:hover,
+a.active {
   color: $bright-pink;
+  transition: .3s;
 }
 
 .nav-content img {
@@ -222,7 +231,7 @@ a:hover {
 
   background: rgba($bright-pink, 0.75);
   width: 100%;
-  height: max-content; // Choose between max-content or min-content
+  height: max-content; 
   margin-top: 20%;
   padding-bottom: 50px;
   flex-direction: row;
@@ -502,36 +511,36 @@ a:hover {
       border: 1px solid rgba($light-purple, 0.1);
     }
 
-    .experience-card:nth-child(odd) {
-      // border-left: 3px solid $light-purple;
-      // padding-left: 3em;
-      transform: translateX(10vw);
-    }
+    // .experience-card:nth-child(odd) {
+    //   // border-left: 3px solid $light-purple;
+    //   // padding-left: 3em;
+    //   transform: translateX(10vw);
+    // }
 
-    .experience-card:nth-child(even) {
-      // border-right: 3px solid $light-purple;
-      // padding-right: 3em;
-      transform: translateX(-10vw);
-    }
+    // .experience-card:nth-child(even) {
+    //   // border-right: 3px solid $light-purple;
+    //   // padding-right: 3em;
+    //   transform: translateX(-10vw);
+    // }
 
-    .experience-card:nth-child(odd)::after, .experience-card:nth-child(even)::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      background: $light-purple;
-      transform: translateY(-50%);
-    }
+    // .experience-card:nth-child(odd)::after, .experience-card:nth-child(even)::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 50%;
+    //   width: 1em;
+    //   height: 1em;
+    //   border-radius: 50%;
+    //   background: $light-purple;
+    //   transform: translateY(-50%);
+    // }
 
-    .experience-card:nth-child(odd)::after {
-      left: -3em;
-    }
+    // .experience-card:nth-child(odd)::after {
+    //   left: -3em;
+    // }
 
-    .experience-card:nth-child(even)::after {
-      right: -3em;
-    }
+    // .experience-card:nth-child(even)::after {
+    //   right: -3em;
+    // }
 
 
 
